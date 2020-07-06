@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js"  ng-app='app1' ng-cloak>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <style>
+            [ng\:cloak], [ng-cloak], .ng-cloak {
+                display: none;
+            }
+        </style>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+
+        
+        <div ng-controller='ctrl1'>{{ hi }}</div>
+
+        <div ng-controller='goodController'>Good scope: {{ good }}</div>
+        <div ng-controller='badController'>Bad scope: {{ bad }}</div>
+
+        <div ng-controller='groceryListController'>{{ groceries.length }} Groceries to Get
+            <h3><span  ng-bind="groceries.length "></span> Groceries to Get</h3>
+                <ol style="margin 0 0 -15px 0">
+                    <li>
+                        {{ groceries[0].item}}
+                    </li>
+                </ol>
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="" async defer></script>
+        <script src="example.js"></script>
+    </body>
+</html>
